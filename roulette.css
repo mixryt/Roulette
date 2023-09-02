@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    background: rgb(111, 62, 62);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    background: rgb(178, 99, 99);
+    position: relative;
+}
+
+.block_text {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background: rgb(239, 239, 239); */
+    margin: 0 25px;
+}
+
+.text {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    /* background: rgb(213, 213, 213); */
+    border-radius: 10px;
+    margin: 0 100px 0 0;
+}
+
+.carousel_move {
+    width: 245px;
+    height: 150px;
+    /* background: rgb(239, 239, 239); */
+    overflow: hidden;
+    /* owerflow - определеяет необходимо ли для переполненного блочного элемента обрезать содержимое, предоставить полосы прокрутки или просто отобразить */
+    position: relative;
+}
+
+
+
+.carousel_list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    transition: all ease 0.5s 0s;
+    padding-left: 0;
+}
+
+.carousel_list li {
+    margin: 0 25px;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    margin: 25px auto;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 10px;
+    background: rgb(111, 62, 62);
+}
+
+.button_2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: inherit;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
+.reset {
+    font-size: 2.5rem;
+}
+
+.button_2:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+}
+
+.block {
+    visibility: hidden;
+}
+
+.carousel_move:hover .block {
+    visibility: visible;
+}
+
+.list_text {
+    width: 195px;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.text_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.done_faild {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.faild {
+    transition: all ease 0.3s;
+    margin: 25px 10px;
+}
+
+.faild:hover {
+    color: rgb(111, 62, 62);
+}
+
+.done {
+    background: rgb(62, 111, 62);
+    transition: all ease 0.3s;
+    margin: 25px 10px;
+}
+
+.done:hover {
+    color: rgb(62, 111, 62);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.greetings {
+    margin: 25px 0;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.label {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.player {
+    margin: 25px 0;
+    background: inherit;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    height: 50px;
+    color: #fff;
+    outline: none;
+}
+
+.player:active {
+    border: none;
+}
+
+.play {
+    margin: 50px 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.carousel_blocked {
+    width: 245px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current_player {
+    text-align: center;
+}
+
+.unblock {
+    width: 70%;
+    height: 30%;
+}
+
+.img_width {
+    width: 195px;
+}
+
+.hid {
+    display: none;
+}
+
+@media screen and (max-width: 980px) {
+    .l_menu {
+        width: 100%;
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .m_text {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .block_text {
+        display: none;
+    }
+}
